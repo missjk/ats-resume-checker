@@ -6,7 +6,7 @@ PyPDF2==3.0.1
 python-docx==0.8.11
 mammoth==1.6.0
 transformers==4.34.0  # Latest should be fine if your code uses Huggingface transformers API
-torch==2.0.1          # Pin exact version for consistency
+torch==2.5.0          # Pin exact version for consistency
 
 # SpaCy dependency required, no downgrade recommended due to code integration
 spacy==3.5.3
