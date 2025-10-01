@@ -1,19 +1,20 @@
 
-# Web framework and auth
 Flask==2.3.3
 Flask-Login==0.6.3
 Werkzeug==2.3.7
-spacy==3.6.1
-sqlite3
-hashlib
-
-# Resume parsing dependencies
 PyPDF2==3.0.1
 python-docx==0.8.11
 mammoth==1.6.0
+transformers==4.34.0  # Latest should be fine if your code uses Huggingface transformers API
+torch==2.0.1          # Pin exact version for consistency
 
-# NLP / ML
-transformers==4.34.0
-torch==2.0.1
+# SpaCy dependency required, no downgrade recommended due to code integration
+spacy==3.5.3
+
+# Add any other packages found imported and used in your code 
+# Example (if pandas or numpy is used):
+# pandas==2.0.3
+# numpy==1.25.2
+
 #  source ats_env/Scripts/activate
 #secret key 9b9d6731b9bf84c462cbf5537af69c84b7e54f32a8a48efb068c9b87f80c0629
